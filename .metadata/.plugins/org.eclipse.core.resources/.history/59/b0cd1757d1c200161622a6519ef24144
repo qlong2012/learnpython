@@ -1,0 +1,255 @@
+#/usr/bin/env/ python
+# _*_ coding:utf-8 _*_
+'''ceshishuru
+'''
+#from click._compat import raw_input
+
+#name = 'alex'
+#action = 'doubi'
+
+#print(name,action)
+
+
+#from file import demo
+
+#.foo()
+
+#print(__name__)
+
+#if __name__ == '__main__':
+#    pass
+
+#print(__file__)
+#print(__doc__)
+
+'''
+def foo(name):
+    print(name,'去砍柴')
+    
+foo('liyang')
+foo('yuanli')
+'''
+'''
+def login(username):
+    if username == 'alex':
+        return 'deng lu cheng gong'
+        
+    else:
+        return 'denglushibai'
+    
+        
+def detail(username):
+    print('ssssssss')
+    
+    
+if __name__ == '__main__':
+    user = raw_input('请输入用户名：')
+    result = login(user)#检查用户合法
+    if result == 'deng lu cheng gong':
+        detail(user)#显示详细
+    else:
+        print('没有明细')
+'''
+
+'''
+def foo(name,action='打车',where='北京'):
+    print(name,'去',action,where)
+    
+foo('liyang','砍柴')
+foo('yuanli','吃饭')
+foo('Heloo','上海')
+'''
+
+'''
+def show(**kargs):
+    for item in kargs.items():
+        print(item)
+user_dict = {'k1':123,"k2":345}
+show(**user_dict)
+show(name='alex',age=18)
+'''
+
+'''
+def show(*arg):
+    for item in arg:
+        print(item)
+#show('liyang','zhuag','sss')
+a = ['liyang','zhuag','sss']
+b = ('liyang','zhuag','sss')
+show(*a)
+show(*b)
+'''
+
+#yield
+'''
+print(range(10))
+for item in range(10):
+    print(item)
+'''
+'''
+def foo():
+    yield 1
+    yield 2
+    yield 3
+    yield 3
+    yield 3
+    yield 3
+re = foo()
+#print(re)
+for item in re:
+    print(item)
+'''
+'''
+#yield 返回的为生成器，迭代时候才产生数值
+
+def AlexReadlines():
+    seek = 0
+    while True:
+        with open('D:/test.txt','r') as f:
+            f.seek(seek)
+            data = f.readline()
+            if data:
+                seek = f.tell()
+                yield data
+            else:
+                return
+
+print(AlexReadlines())
+for item in AlexReadlines():
+    print(item)
+'''
+'''
+def AlexReadlines():
+    seek = 0
+    while True:
+        with open('D:/test.txt','r') as f:
+            f.seek(seek)
+            data = f.readline()
+            if data:
+                seek = f.tell()
+                return data
+            else:
+                return
+
+print(AlexReadlines())
+'''
+
+
+#三元运算
+'''
+temp = None
+if 1>3:
+    temp = 'gt'
+else:
+    temp = 'lt'
+print(temp)
+    
+result = 'gt' if 1>3 else 'lt'
+print(result)
+'''
+
+'''
+#lambda表达式
+temp = lambda x,y:x+y
+print(temp(4,10))
+'''
+'''
+a = []
+a1 = list()
+print(dir())
+print(vars())
+print(type(a1))
+'''
+
+'''
+from file import demo
+from file import demo
+#demo.bar()
+reload (demo)
+'''
+
+'''
+a = 13
+b = 13
+print(id(a))
+print(id(b))
+#开发过程中分页显示
+print(divmod(9, 3))
+print(divmod(9, 3)[1])
+print(max(11,12))
+print(sum([11,12]))#sum参数必须是列表
+print(pow(2,10)) #指数
+'''
+'''
+print(len('zhongguo'))
+print(len('中国'))
+print(all([1,2,3,4]))#all输入可迭代东西，遍历整个整个都为真，返回True.
+print(all([1,0,0,0 ]))
+print(all([0,0,0,0 ]))
+print(hex(2))
+print(bin(2))
+print(oct(2))
+
+shoping = ['手表','汽车','轮子']
+for item in shoping:
+    print(item)
+#enumerate 给列表加序列,%s占位符，
+for item in enumerate(shoping,1):
+    print(item[0],item[1])
+s = 'i am {0},{1}'
+print(s.format('liqinglong', 25))
+'''
+
+'''
+def foo(arg):
+    return arg + 100
+li = [11,22,33]
+
+for item in li:
+    item = foo(item)
+    print(item)
+
+a = map(foo,li)
+print(a)
+for item in a:
+        print(item)
+
+temp = map(lambda x:x+100,li)
+print(temp)
+for item in temp:
+        print(item)
+'''
+
+'''
+li = [11,22,33]
+def foo(arg):
+    if arg < 22:
+        return True
+    else:
+        return False
+temp = filter(foo,li)
+for item in temp:
+        print(item)
+
+#reduce 累加
+li = [11,22,33]
+print(reduce(lambda x,y:x+y,li))
+
+#zip 参数为 列表，返回一个zip object
+a = [1,2,3,4,5]
+b = [2,3,4,5,]
+c = [3,4,5,6,7]
+temp = zip(a,b,c)
+for item in temp:
+        print(item)
+'''
+
+a = '8*8'
+a = a.split('*')
+print(a)
+
+
+
+
+
+

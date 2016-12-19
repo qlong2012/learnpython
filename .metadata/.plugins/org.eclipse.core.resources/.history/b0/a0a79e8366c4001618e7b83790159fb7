@@ -1,0 +1,6 @@
+
+file = 'D://test.txt'
+f = open(file,'r' )
+for line in f.readline():   
+    print(line)
+f.close()

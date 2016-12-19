@@ -1,0 +1,6 @@
+
+file = 'D://test.txt'
+f = open(file,'r' )
+a = f.read()
+print(a)
+f.close()

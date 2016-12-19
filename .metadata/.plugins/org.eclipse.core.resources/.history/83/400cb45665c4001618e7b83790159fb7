@@ -1,0 +1,8 @@
+name = "qlong"
+inname = input()
+while inname == name :
+    print('chenggong')
+
+else:
+    print(name)
+#else:

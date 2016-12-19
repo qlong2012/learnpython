@@ -1,0 +1,8 @@
+char = 0
+
+while char < 100:
+    print('ceshi')
+    
+    char += 1 
+    
+#else:

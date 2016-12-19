@@ -1,0 +1,20 @@
+-- VERSION_4
+-- START DISKCACHE_2
+C:\Users\qlong\workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\Day03\com.python.pydev.analysis\v2_indexcache
+test.zuoye|1481993724392051000|C:\Users\qlong\workspace\Day03\test\zuoye.py
+test.__init__|1481993643729944000|C:\Users\qlong\workspace\Day03\test\__init__.py
+test.day03|1481982840610394000|C:\Users\qlong\workspace\Day03\test\day03.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=test.zuoye
+-- END DICTIONARY
+-- START TREE 1
+3
+f|1|f!11@
+fil|1|file!11@
+lin|1|line!11@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

@@ -1,0 +1,9 @@
+'''
+Created on 2016年12月14日
+
+@author: qlong
+'''
+
+name = 'alix'
+action = 'doubi'
+print(name,action)

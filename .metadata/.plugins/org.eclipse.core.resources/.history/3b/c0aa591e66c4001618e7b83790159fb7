@@ -1,0 +1,7 @@
+
+file = 'D://test.txt'
+f = open(file,'r' )
+for line in f.readlines():
+    line = line.split()    
+    print(line)
+f.close()

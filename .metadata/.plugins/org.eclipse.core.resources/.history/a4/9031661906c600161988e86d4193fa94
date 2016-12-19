@@ -1,0 +1,24 @@
+#/user/bin/env python
+# _*_ coding:utf-8 _*_
+import random
+
+#生成信用卡ID，随机生成6个数字，组成卡号，返回卡号
+def creditcard_id():
+    card_id = [] 
+    for i in range(6):
+        num = random.randint(0,9)
+        card_id.append(num)
+     
+    card_id = ''.join(card_id)
+    print(card_id)
+    return card_id     
+creditcard_id()
+'''
+#注册信用卡
+def register():
+    name = input('请输入您的姓名：')
+    age = input('情输入您的年龄：')
+    profession = input('请输入您的职业：')
+'''
+    
+    

@@ -1,0 +1,8 @@
+
+file = 'D://test.txt'
+f = open(file,'r' )
+line = f.readline()
+while line:  
+        print(line) 
+f.close()
+print('chengong')

@@ -1,0 +1,10 @@
+
+file = 'D://test.txt'
+f = open(file,'r' )
+i = 0
+while True:
+    f.seek(i)
+    for line in f.readline():   
+        print(line)
+    i = f.tell()
+f.close()

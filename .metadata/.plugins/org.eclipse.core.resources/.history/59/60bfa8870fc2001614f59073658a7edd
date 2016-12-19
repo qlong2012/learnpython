@@ -1,0 +1,138 @@
+#/usr/bin/env/ python
+# _*_ coding:utf-8 _*_
+'''ceshishuru
+'''
+#from click._compat import raw_input
+
+#name = 'alex'
+#action = 'doubi'
+
+#print(name,action)
+
+
+#from file import demo
+
+#.foo()
+
+#print(__name__)
+
+#if __name__ == '__main__':
+#    pass
+
+#print(__file__)
+#print(__doc__)
+
+'''
+def foo(name):
+    print(name,'去砍柴')
+    
+foo('liyang')
+foo('yuanli')
+'''
+'''
+def login(username):
+    if username == 'alex':
+        return 'deng lu cheng gong'
+        
+    else:
+        return 'denglushibai'
+    
+        
+def detail(username):
+    print('ssssssss')
+    
+    
+if __name__ == '__main__':
+    user = raw_input('请输入用户名：')
+    result = login(user)#检查用户合法
+    if result == 'deng lu cheng gong':
+        detail(user)#显示详细
+    else:
+        print('没有明细')
+'''
+
+'''
+def foo(name,action='打车',where='北京'):
+    print(name,'去',action,where)
+    
+foo('liyang','砍柴')
+foo('yuanli','吃饭')
+foo('Heloo','上海')
+'''
+
+'''
+def show(**kargs):
+    for item in kargs.items():
+        print(item)
+user_dict = {'k1':123,"k2":345}
+show(**user_dict)
+show(name='alex',age=18)
+'''
+
+'''
+def show(*arg):
+    for item in arg:
+        print(item)
+#show('liyang','zhuag','sss')
+a = ['liyang','zhuag','sss']
+b = ('liyang','zhuag','sss')
+show(*a)
+show(*b)
+'''
+
+#yield
+'''
+print(range(10))
+for item in range(10):
+    print(item)
+'''
+'''
+def foo():
+    yield 1
+    yield 2
+    yield 3
+    yield 3
+    yield 3
+    yield 3
+re = foo()
+#print(re)
+for item in re:
+    print(item)
+'''
+
+#yield 返回的为生成器，迭代时候才产生数值
+'''
+def AlexReadlines():
+    seek = 0
+    while True:
+        with open('D:/test.txt','r') as f:
+            f.seek(seek)
+            data = f.readline()
+            if data:
+                seek = f.tell()
+                yield data
+            else:
+                return
+
+print(AlexReadlines())
+for item in AlexReadlines():
+    print(item)
+'''
+'''
+def AlexReadlines():
+    seek = 0
+    while True:
+        with open('D:/test.txt','r') as f:
+            f.seek(seek)
+            data = f.readline()
+            if data:
+                seek = f.tell()
+                return data
+            else:
+                return
+
+print(AlexReadlines())
+'''
+
+
+

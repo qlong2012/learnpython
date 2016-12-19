@@ -1,0 +1,6 @@
+name = 'qlong'
+
+
+print(name)
+
+#else:
